@@ -1,0 +1,18 @@
+extends layouts/layout
+
+block vars
+    -title = 'error'
+    -bodyClass = 'page-error'
+block container
+    main#main
+        .block-error   
+            .container
+                .center
+                    +img("","images/upload/img404.png")
+                    h3 Địa chỉ bạn truy cập không tồn tại !
+                    p Có thể URL bị hỏng hoặc đã bị quản trị viên xóa bỏ.<br/> Bạn vui lòng thử lại hoặc quay trờ về trang chủ
+                .row
+                    .col-xs-6.text-right
+                        a(href="#",title="").btn.btn-default Thử lại
+                    .col-xs-6.text-left
+                        a(href="#",title="").btn.btn-red Trang chủ

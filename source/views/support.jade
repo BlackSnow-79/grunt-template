@@ -1,0 +1,206 @@
+extends layouts/layout
+
+block vars
+    -title = 'hotro'
+    -bodyClass = 'hotro'
+block navs
+  -var active = 'Hổ trợ';
+block container
+    main#main
+        .banner.banner-search
+            .content
+                .container
+                    .row
+                        .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-search
+                            .row.row-mobile
+                                .row.row-mobile
+                                    h1 Hi ! MyFace đang sẵn lòng giúp bạn !
+                                    form.navbar-form(role="search")
+                                        .input-group.add-on
+                                            input.form-control(placeholder="Nhập nội dung mà bạn đang gặp khó khăn...",name="srch-term",id="srch-term",type="text")
+                                            .input-group-btn
+                                                button.btn.btn-default(type="submit")
+                                                    i.icon.icon-search
+        .container
+            .row
+                .col-md-4
+                    .menuCustom
+                        #menu
+                            nav
+                                ul
+                                    li.active
+                                        a(href="#") Cơ bản cho người bắt đầu
+                                        h2.hidden Cơ bản cho người bắt đầu
+                                        ul
+                                            li
+                                                a(href="#") Cơ bản cho người bắt đầu
+                                                h2.hidden Cơ bản cho người bắt đầu
+                                                ul
+                                                    li
+                                                        a(href="#") Cơ bản cho người bắt đầu
+                                                    li
+                                                        a(href="#") Cơ bản cho người bắt đầu
+                                                    li
+                                                        a(href="#") Cơ bản cho người bắt đầu
+                                                    li
+                                                        a(href="#") Cơ bản cho người bắt đầu
+                                            li
+                                                a(href="#") Tài khoản
+                                                h2.hidden Tài khoản
+                                                ul
+                                                    li
+                                                        a(href="#") Tên tài khoản
+                                                    li
+                                                        a(href="#") Thông tin tài khoản
+                                    li
+                                        a(href="support.html") Đơn hàng
+                                        h2.hidden Đơn hàng
+                                        ul
+                                            li
+                                                a(href="support-list.html",title="tạo đơn hàng") Tạo đơn hàng
+                                            li
+                                                a(href="#") Điều chỉnh đơn hàng
+                                            li
+                                                a(href="#") Hổ trợ đơn hàng     
+                                    li
+                                        a(href="#") Kết nối hệ thống
+                                    li
+                                        a(href="#") Thông tin khách hàng
+                                    li
+                                        a(href="#") Các báo cáo
+                                    li
+                                        a(href="#") Ẩn comments - chat
+                                    li
+                                        a(href="#") Cấu hình tài khoản
+                                    li
+                                        a(href="#") Kênh bán hàng
+                                    li
+                                        a(href="#") Cấu hình vận chuyển
+                                    li
+                                        a(href="#") Khuyến mãi                           
+                .col-md-8.block-support
+                    .block-list.block-title1
+                        .heading
+                            h4 Chủ đề hay gặp
+                        .row
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon1
+                                    span.text Chuẩn bị gì để đăng một sản phẩm
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon2
+                                    span.text Chuẩn bị gì để đăng một sản phẩm
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon3
+                                    span.text Chuẩn bị gì để đăng một sản phẩm 
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon4
+                                    span.text Chuẩn bị gì để đăng một sản phẩm
+                    
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon5
+                                    span.text Chuẩn bị gì để đăng một sản phẩm
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon6
+                                    span.text Chuẩn bị gì để đăng một sản phẩm
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon7
+                                    span.text Chuẩn bị gì để đăng một sản phẩm 
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon8
+                                    span.text Chuẩn bị gì để đăng một sản phẩm
+                        
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon9
+                                    span.text Chuẩn bị gì để đăng một sản phẩm
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon10
+                                    span.text Chuẩn bị gì để đăng một sản phẩm
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon11
+                                    span.text Chuẩn bị gì để đăng một sản phẩm 
+                            .col-xs-6.col-sm-4.col-md-3
+                                a(href="javascript:void()", title="").link-icon-support
+                                    label
+                                        span.icon.icon12
+                                    span.text Chuẩn bị gì để đăng một sản phẩm
+                    .block-list.block-title2
+                        .heading
+                            h4 Chủ đề hay gặp
+                        a(href="javascript:void()", title="").link-icon-support
+                            span.icon.icon13
+                            span.text Tôi không thể thay đổi được giá bán sản phẩm?
+                        a(href="javascript:void()", title="").link-icon-support
+                            span.icon.icon13
+                            span.text Tôi không thể thay đổi được giá bán sản phẩm?
+                        a(href="javascript:void()", title="").link-icon-support
+                            span.icon.icon13
+                            span.text Tôi không thể thay đổi được giá bán sản phẩm? 
+                        a(href="javascript:void()", title="").link-icon-support
+                            span.icon.icon13
+                            span.text Tôi không thể thay đổi được giá bán sản phẩm?
+                    .block-list.block-guide
+                        .heading
+                            h4 Hướng dẩn cho người mới bắt đầu
+                        .list-thumb
+                            .thumb
+                                span.icon.icon14
+                                h5: a(href="javascript:void()", title="") Cách sử dụng MyFace căn bản
+                                p MyFace có những gì, cách tìm hiểu về MyFace nhanh nhất...
+                                a(href="javascript:void()", title="").link-orange Tìm hiểu thêm
+                        
+                            .thumb
+                                span.icon.icon14
+                                h5: a(href="javascript:void()", title="") Cách sử dụng MyFace căn bản
+                                p MyFace có những gì, cách tìm hiểu về MyFace nhanh nhất...
+                                a(href="javascript:void()", title="").link-orange Tìm hiểu thêm
+                        
+                            .thumb
+                                span.icon.icon14
+                                h5: a(href="javascript:void()", title="") Cách sử dụng MyFace căn bản
+                                p MyFace có những gì, cách tìm hiểu về MyFace nhanh nhất...
+                                a(href="javascript:void()", title="").link-orange Tìm hiểu thêm
+                    .block-list.block-guide.block-content
+                        .heading
+                            h4 Vẫn chưa tìm ra nội dung giải đáp ?
+                            p MyFace khuyến khích bạn liên hệ trực tiếp với chúng tôi
+                        .list-thumb
+                            .thumb
+                                a(href="javascript:void()", title="").link-icon-support
+                                    span.icon.icon15
+                                    h5 Gửi thư yêu cầu
+                                    p Hãy gửi cho chúng tôi những thắc mắc của bạn, hoặc chỉ đơn giản là phàn nàn về hệ thống. MyFace sẽ trả lời bạn trong thời gian nhanh nhất có thể.
+                                
+                            .thumb
+                                a(href="javascript:void()", title="").link-icon-support
+                                    span.icon.icon16
+                                    h5 Chat trực tuyến
+                                    p Chat trực tuyến với nhân viên tư vấn của chúng tôi, để nhận được những sự giúp đỡ &amp; tư vấn đầy đủ nhất
+                                
+                            .thumb
+                                a(href="tel:1900636798", title="").link-icon-support
+                                    span.icon.icon17
+                                    h5 Gọi điện trực tiếp
+                                    p Gọi điện thoại nói chuyện trực tuyến với nhân viên tư vấn để được sự hướng dẫn nhanh nhất.
+                                

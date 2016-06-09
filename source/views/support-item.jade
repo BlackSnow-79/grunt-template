@@ -1,0 +1,111 @@
+extends layouts/layout
+
+block vars
+    -title = 'hotro'
+    -bodyClass = 'hotro'
+block navs
+  -var active = 'Hổ trợ';
+block container
+    main#main
+        .banner.banner-search
+            .content
+                .container
+                    .row
+                        .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-search
+                            .row.row-mobile
+                                .row.row-mobile
+                                    h1 Hi ! MyFace đang sẵn lòng giúp bạn !
+                                    form.navbar-form(role="search")
+                                        .input-group.add-on
+                                            input.form-control(placeholder="Nhập nội dung mà bạn đang gặp khó khăn...",name="srch-term",id="srch-term",type="text")
+                                            .input-group-btn
+                                                button.btn.btn-default(type="submit")
+                                                    i.icon.icon-search
+        .container
+            .row
+                .col-md-4
+                    .menuCustom
+                        .backItemClassCustom
+                            a(href="hotro.html",title="tạo đơn hàng") Đơn hàng
+                                i.floatRight.fa.fa-angle-left
+                        #menu
+                            nav 
+                                ul
+                                    li.active
+                                        a(href="support-list.html",title="tạo đơn hàng") Tạo đơn hàng
+                                    li
+                                        a(href="#") Điều chỉnh đơn hàng
+                                    li
+                                        a(href="#") Hổ trợ đơn hàng          
+                .col-md-8.block-support
+                    .block-about-content
+                        h4 Tạo đơn hàng
+                        .guide-create
+                            a(href="#",title="") 
+                                span.icon-create
+                                span.text Hướng dẩn tạo đơn hàng
+                    .block-about-content.block-about2
+                        h5 Tài liệu hướng dẫn sử dụng / 4 - Bán hàng / Tạo đơn hàng
+                        p Để tạo đơn hàng cần phải lưu ý: Ta chỉ cần gõ tên hoặc mã sản phẩm, có thể gõ tối thiểu 2 ký tự đầu, hệ thống sẽ tự động liệt kê cho ta lựa chọn. Chọn sản phẩm bằng nhấp chuột hoặc nút lên xuống trên bàn phím.
+                        p.text Bao gồm:
+                        p.text 
+                            b Hình thức:
+                            | thanh toán bằng tiền mặt, chuyển khoản, thẻ.
+                        p.text  
+                            b Tiền hàng: 
+                            | Hệ thống đã tính.
+                        p.text  
+                            b Giảm giá:
+                            | tại đây ta có thể linh động giảm theo phần trăm giá trị món hàng hoặc giảm một số tiền cụ thể.
+                        p.text  
+                            b Tổng cộng: 
+                            | Hệ thống đã tính.
+                        p.text  
+                            b Đã thanh toán: 
+                            | số tiền khách hàng đã thanh toán cho món hàng.
+                        p.text 
+                            b Còn nợ: 
+                            | số nợ còn lại.
+                        .img-create
+                            +img("","images/upload/imgcreate.jpg")
+                        p.text 
+                            b Sau đó ta có 4 lựa chọn:
+                        p.text  
+                            b Lưu tạm: 
+                            | chỉ lưu bản nháp, không được xem là một đơn hàng.
+                        p.text  
+                            b Lưu:
+                            | sau khi lưu, hệ thống tự động cập nhật thêm một đơn hàng.
+                        p.text  
+                            b Hủy: 
+                            | hủy đơn hàng.
+                    .paging-nav
+                        .nav
+                            a(href="#", title="").pre.active
+                                span.fa.fa-angle-left
+                                span.text Trở về
+                            a(href="#", title="").next
+                                span.text Kế tiếp
+                                span.fa.fa-angle-right
+                    .block-list.block-guide.block-content
+                        .heading
+                            h4 Vẫn chưa tìm ra nội dung giải đáp ?
+                            p MyFace khuyến khích bạn liên hệ trực tiếp với chúng tôi
+                        .list-thumb
+                            .thumb
+                                a(href="javascript:void()", title="").link-icon-support
+                                    span.icon.icon15
+                                    h5 Gửi thư yêu cầu
+                                    p Hãy gửi cho chúng tôi những thắc mắc của bạn, hoặc chỉ đơn giản là phàn nàn về hệ thống. MyFace sẽ trả lời bạn trong thời gian nhanh nhất có thể.
+                                
+                            .thumb
+                                a(href="javascript:void()", title="").link-icon-support
+                                    span.icon.icon16
+                                    h5 Chat trực tuyến
+                                    p Chat trực tuyến với nhân viên tư vấn của chúng tôi, để nhận được những sự giúp đỡ &amp; tư vấn đầy đủ nhất
+                                
+                            .thumb
+                                a(href="tel:1900636798", title="").link-icon-support
+                                    span.icon.icon17
+                                    h5 Gọi điện trực tiếp
+                                    p Gọi điện thoại nói chuyện trực tuyến với nhân viên tư vấn để được sự hướng dẫn nhanh nhất.

@@ -1,0 +1,20 @@
+header#header
+  .inner
+    .container
+        .navbar
+            .navbar-header
+                a(href="#",data-toggle="collapse",data-target="#bs-example-navbar-collapse-1",aria-expanded="false").navbar-toggle.collapsed
+                    span.ico.icon-bars
+                a(href="home.html", title="").navbar-brand
+                    img(src="images/logo.png", alt="")
+            .collapse.navbar-collapse#bs-example-navbar-collapse-1
+                nav.navbar-left
+                    +nav([
+                        {icon: "" , title: "Tính năng", href: "features.html"},
+                        {icon: "" , title: "Gói dịch vụ", href: "pricing.html"},
+                        {icon: "" , title: "Hổ trợ", href: "support.html"},
+                        {icon: "" , title: "Blog - Hướng dẫn", href: "bloghuongdan.html"}
+                    ])
+                .navbar-right
+                    +link( "Đăng nhập").btn.btn-default
+                    +link("Dùng thử miễn phí ").btn.btn-red

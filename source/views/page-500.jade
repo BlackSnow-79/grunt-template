@@ -1,0 +1,13 @@
+extends layouts/layout
+
+block vars
+    -title = 'error'
+    -bodyClass = 'page-error'
+block container
+    main#main
+        .block-error   
+            .container
+                .center
+                    +img("","images/upload/img500.png")
+                    h3 Xin lỗi, hệ thống đang bảo trì nâng cấp !
+                    p Bạn vui lòng quay lại sau

@@ -1,0 +1,78 @@
+extends layouts/layout
+
+block vars
+    -title = 'hotro'
+    -bodyClass = 'hotro'
+block navs
+  -var active = 'Hổ trợ';
+block container
+    main#main
+        .banner.banner-search
+            .content
+                .container
+                    .row
+                        .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-search
+                            .row.row-mobile
+                                .row.row-mobile
+                                    h1 Hi ! MyFace đang sẵn lòng giúp bạn !
+                                    form.navbar-form(role="search")
+                                        .input-group.add-on
+                                            input.form-control(placeholder="Nhập nội dung mà bạn đang gặp khó khăn...",name="srch-term",id="srch-term",type="text")
+                                            .input-group-btn
+                                                button.btn.btn-default(type="submit")
+                                                    i.icon.icon-search
+        .container
+            .row
+                .col-md-4
+                    .menuCustom
+                        .backItemClassCustom
+                            a(href="support.html",title="tạo đơn hàng") Đơn hàng
+                                i.floatRight.fa.fa-angle-left
+                        #menu
+                            nav 
+                                ul
+                                    li.active
+                                        a(href="support-list.html",title="tạo đơn hàng") Tạo đơn hàng
+                                    li
+                                        a(href="#") Điều chỉnh đơn hàng
+                                    li
+                                        a(href="#") Hổ trợ đơn hàng     
+                                              
+                .col-md-8.block-support
+                    .block-list.block-title2
+                        .heading
+                            h4 Chủ đề hay gặp
+                        a(href="support-item.html", title="").link-icon-support
+                            span.icon.icon13
+                            span.text Tôi không thể thay đổi được giá bán sản phẩm?
+                        a(href="support-item.html", title="").link-icon-support
+                            span.icon.icon13
+                            span.text Tôi không thể thay đổi được giá bán sản phẩm?
+                        a(href="support-item.html", title="").link-icon-support
+                            span.icon.icon13
+                            span.text Tôi không thể thay đổi được giá bán sản phẩm? 
+                        a(href="support-item.html", title="").link-icon-support
+                            span.icon.icon13
+                            span.text Tôi không thể thay đổi được giá bán sản phẩm?
+                    .block-list.block-guide.block-content
+                        .heading
+                            h4 Vẫn chưa tìm ra nội dung giải đáp ?
+                            p MyFace khuyến khích bạn liên hệ trực tiếp với chúng tôi
+                        .list-thumb
+                            .thumb
+                                a(href="javascript:void()", title="").link-icon-support
+                                    span.icon.icon15
+                                    h5 Gửi thư yêu cầu
+                                    p Hãy gửi cho chúng tôi những thắc mắc của bạn, hoặc chỉ đơn giản là phàn nàn về hệ thống. MyFace sẽ trả lời bạn trong thời gian nhanh nhất có thể.
+                                
+                            .thumb
+                                a(href="javascript:void()", title="").link-icon-support
+                                    span.icon.icon16
+                                    h5 Chat trực tuyến
+                                    p Chat trực tuyến với nhân viên tư vấn của chúng tôi, để nhận được những sự giúp đỡ &amp; tư vấn đầy đủ nhất
+                                
+                            .thumb
+                                a(href="tel:1900636798", title="").link-icon-support
+                                    span.icon.icon17
+                                    h5 Gọi điện trực tiếp
+                                    p Gọi điện thoại nói chuyện trực tuyến với nhân viên tư vấn để được sự hướng dẫn nhanh nhất.

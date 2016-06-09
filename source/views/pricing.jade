@@ -1,0 +1,837 @@
+extends layouts/layout
+
+block vars
+    -title = 'Gói dịch vụ'
+    -bodyClass = 'goidichvu'
+block navs
+  -var active = 'Gói dịch vụ';
+block container
+    main#main
+        .banner.banner-text-left
+            .carousel.slide#carousel-example-generic(data-ride="carousel")
+                ol.carousel-indicators
+                    li(data-target="#carousel-example-generic",data-slide-to="0").active
+                    li(data-target="#carousel-example-generic",data-slide-to="1")
+                    li(data-target="#carousel-example-generic",data-slide-to="2")
+                .carousel-inner(role="listbox")
+                    .item.active
+                        +img("slide", "images/slidebanner.jpg")
+                    .item
+                        +img("slide", "images/slidebanner.jpg")
+                    .item
+                        +img("slide", "images/slidebanner.jpg")
+                a.left.carousel-control(href="#carousel-example-generic" ,role="button",data-slide="prev")
+                    span.fa.fa-angle-left(aria-hidden="true")
+                    span.sr-only Previous
+              
+                a.right.carousel-control(href="#carousel-example-generic", role="button", data-slide="next")
+                    span.fa.fa-angle-right(aria-hidden="true")
+                    span.sr-only Next
+            .content
+                .container
+                    .row
+                        .col-sm-8.col-md-5
+                            h1 Thường xuyên tổ chức các buổi huấn luyện cho Shopper
+                            p MyFace thường xuyên tổ chức các buổi huấn luyện sẻ dụng hệ thống, kỹ năng bán hàng, kỹ năng quảng bá sản phẩm trên mạng xã hội... cho Shopper, giúp bạn bán hàng tốt hơn
+                            +link("Bắt đầu dùng thử miễn phí 100%").btn.btn-red
+        .block-table-services
+            .container
+                .scroll-table
+                    .list-product-services.clearfix
+                        .item
+                            .item-list.accordion
+                                .box-product
+                                    +linkImg("", "proservices1.png", "javascript:void();", "services").link-img
+                                    h4 Khởi đầu
+                                    p.text Phù hợp cho người mới bắt đầu
+                                    p.price 
+                                        sub 0
+                                        | 000đ
+                                    +link("Dùng thử").btn.btn-red
+                                .list-check.accordion-section
+                                    .heading
+                                        a.accordion-section-title(href="#ac1") Tính năng
+                                    .accordion-section-content#ac1
+                                        .tr.clearfix
+                                            .td Quản lý chung
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản lý đơn hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Hổ trợ đơn hàng
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Quản lý sản phẩm
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Import hàng loạt sản phẩm
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Quản lý thông tin khách hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thống kê khách hàng
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo theo chi tiết
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo kết hợp
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Ẩn các comment  - chat
+                                            .td 
+                                                span.ico.icon-check-green
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac2") Cấu hình
+                                    .accordion-section-content#ac2
+                                        .tr.clearfix
+                                            .td Cấu hình thông tin chung
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thêm nhiều địa chỉ cửa hàng
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Quản trị viên mặc định
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thay đổi quyền quản trị
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Sử dụng khu vực &amp; phí vận chuyển của Công ty vận chuyển
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thiết lập khu vực &amp; phí vận chuyển riêng
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Tạo các khuyến mại, quảng cáo
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Cấu hình ẩn các comment - chat
+                                            .td 
+                                            
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac3") Kênh bán hàng
+                                    .accordion-section-content#ac3
+                                        .tr.clearfix
+                                            .td Facebook
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Zalo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Viber
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Shop.myface.vn
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td 5giay.vn
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Webtretho.com
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Enbac.com
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Solo.vn
+                                            .td 
+                                            
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac4") Hỗ trợ
+                                    .accordion-section-content#ac4
+                                        .tr.clearfix
+                                            .td Trung tâm hỗ trợ
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Email hỗ trợ
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Chat - hỗ trợ trực tuyến
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Điện thoại trực tiếp
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Hỗ trợ khách hàng của Shop
+                                            .td 
+                                            
+
+                        .item
+                            .item-list.accordion
+                                .box-product
+                                    +linkImg("", "proservices2.png", "javascript:void();", "services").link-img
+                                    h4 Rau mùi
+                                    p.text Phù hợp cho cửa hàng nhỏ
+                                    p.price 
+                                        sub 99
+                                        | 000đ
+                                    +link("Dùng thử").btn.btn-red
+                                .list-check.accordion-section
+                                    .heading
+                                        a.accordion-section-title(href="#ac5") Tính năng
+                                    .accordion-section-content#ac5
+                                        .tr.clearfix
+                                            .td Quản lý chung
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản lý đơn hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Hổ trợ đơn hàng
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Quản lý sản phẩm
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Import hàng loạt sản phẩm
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Quản lý thông tin khách hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thống kê khách hàng
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo theo chi tiết
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo kết hợp
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Ẩn các comment  - chat
+                                            .td 
+                                                span.ico.icon-check-green
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac6") Cấu hình
+                                    .accordion-section-content#ac6
+                                        .tr.clearfix
+                                            .td Cấu hình thông tin chung
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thêm nhiều địa chỉ cửa hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản trị viên mặc định
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thay đổi quyền quản trị
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Sử dụng khu vực &amp; phí vận chuyển của Công ty vận chuyển
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thiết lập khu vực &amp; phí vận chuyển riêng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Tạo các khuyến mại, quảng cáo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Cấu hình ẩn các comment - chat
+                                            .td 
+                                            
+                                .list-check.accordion-section
+                                    .heading
+                                        a.accordion-section-title(href="#ac7") Kênh bán hàng
+                                    .accordion-section-content#ac7
+                                        .tr.clearfix
+                                            .td Facebook
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Zalo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Viber
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Shop.myface.vn
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td 5giay.vn
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Webtretho.com
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Enbac.com
+                                            .td 
+                                                
+                                        .tr.clearfix
+                                            .td Solo.vn
+                                            .td 
+                                                
+                                    .list-check.accordion-section
+                                        .heading 
+                                            a.accordion-section-title(href="#ac8") Hỗ trợ
+                                        .accordion-section-content#ac8
+                                            .tr.clearfix
+                                                .td Trung tâm hỗ trợ
+                                                .td 
+                                                    span.ico.icon-check-green
+                                            .tr.clearfix
+                                                .td Email hỗ trợ
+                                                .td 
+                                                    span.ico.icon-check-green
+                                            .tr.clearfix
+                                                .td Chat - hỗ trợ trực tuyến
+                                                .td 
+                                                    span.ico.icon-check-green
+                                            .tr.clearfix
+                                                .td Điện thoại trực tiếp
+                                                .td 
+                                                    span.ico.icon-check-green
+                                            .tr.clearfix
+                                                .td Hỗ trợ khách hàng của Shop
+                                                .td 
+                                                    span.ico.icon-check-green
+
+                        .item
+                            .item-list.accordion
+                                .box-product
+                                    +linkImg("", "proservices3.png", "javascript:void();", "services").link-img
+                                    h4 Đậu que
+                                    p.text Phù hợp cho Shopper đã kinh doanh
+                                    p.price 
+                                        sub 199
+                                        | 000đ
+                                    +link("Dùng thử").btn.btn-red
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac9") Tính năng
+                                    .accordion-section-content#ac9
+                                        .tr.clearfix
+                                            .td Quản lý chung
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản lý đơn hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Hổ trợ đơn hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản lý sản phẩm
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Import hàng loạt sản phẩm
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản lý thông tin khách hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thống kê khách hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo theo chi tiết
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo kết hợp
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Ẩn các comment  - chat
+                                            .td 
+                                                span.ico.icon-check-green
+                                .list-check.accordion-section
+                                    .heading
+                                        a.accordion-section-title(href="#ac10") Cấu hình
+                                    .accordion-section-content#ac10
+                                        .tr.clearfix
+                                            .td Cấu hình thông tin chung
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thêm nhiều địa chỉ cửa hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản trị viên mặc định
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thay đổi quyền quản trị
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Sử dụng khu vực &amp; phí vận chuyển của Công ty vận chuyển
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thiết lập khu vực &amp; phí vận chuyển riêng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Tạo các khuyến mại, quảng cáo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Cấu hình ẩn các comment - chat
+                                            .td 
+                                                span.ico.icon-check-green
+                                .list-check.accordion-section
+                                    .heading
+                                        a.accordion-section-title(href="#ac11") Kênh bán hàng
+                                    .accordion-section-content#ac11
+                                        .tr.clearfix
+                                            .td Facebook
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Zalo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Viber
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Shop.myface.vn
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td 5giay.vn
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Webtretho.com
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Enbac.com
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Solo.vn
+                                            .td 
+                                                span.ico.icon-check-green
+                                .list-check.accordion-section
+                                    .heading
+                                        a.accordion-section-title(href="#ac12") Hỗ trợ
+                                    .accordion-section-content#ac12   
+                                        .tr.clearfix
+                                            .td Trung tâm hỗ trợ
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Email hỗ trợ
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Chat - hỗ trợ trực tuyến
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Điện thoại trực tiếp
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Hỗ trợ khách hàng của Shop
+                                            .td 
+                                                span.ico.icon-check-green
+                        .item
+                            .item-list.accordion
+                                .box-product
+                                    +linkImg("", "proservices4.png", "javascript:void();", "services").link-img
+                                    h4 Bắp mỹ
+                                    p.text Phù hợp cho Shopper  đã vững vàng
+                                    p.price 
+                                        sub 299
+                                        | 000đ
+                                    +link("Dùng thử").btn.btn-red
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac13") Tính năng
+                                    .accordion-section-content#ac13  
+                                        .tr.clearfix
+                                            .td Quản lý chung
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản lý đơn hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Hổ trợ đơn hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản lý sản phẩm
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Import hàng loạt sản phẩm
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản lý thông tin khách hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thống kê khách hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo theo chi tiết
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo kết hợp
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Ẩn các comment  - chat
+                                            .td 
+                                                span.ico.icon-check-green
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac14") Cấu hình
+                                    .accordion-section-content#ac14 
+                                        .tr.clearfix
+                                            .td Cấu hình thông tin chung
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thêm nhiều địa chỉ cửa hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản trị viên mặc định
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thay đổi quyền quản trị
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Sử dụng khu vực &amp; phí vận chuyển của Công ty vận chuyển
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thiết lập khu vực &amp; phí vận chuyển riêng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Tạo các khuyến mại, quảng cáo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Cấu hình ẩn các comment - chat
+                                            .td 
+                                                span.ico.icon-check-green
+                                .list-check.accordion-section
+                                    .heading
+                                        a.accordion-section-title(href="#ac15") Kênh bán hàng
+                                    .accordion-section-content#ac15
+                                        .tr.clearfix
+                                            .td Facebook
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Zalo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Viber
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Shop.myface.vn
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td 5giay.vn
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Webtretho.com
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Enbac.com
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Solo.vn
+                                            .td 
+                                                span.ico.icon-check-green
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac16") Hỗ trợ
+                                    .accordion-section-content#ac16
+                                        .tr.clearfix
+                                            .td Trung tâm hỗ trợ
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Email hỗ trợ
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Chat - hỗ trợ trực tuyến
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Điện thoại trực tiếp
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Hỗ trợ khách hàng của Shop
+                                            .td 
+                                                span.ico.icon-check-green
+                        .item
+                            .item-list.accordion
+                                .box-product
+                                    +linkImg("", "proservices5.png", "javascript:void();", "services").link-img
+                                    h4 Cải bắp
+                                    p.text Phù hợp cho doanh nghiệp vừa &amp; nhỏ
+                                    p.price 
+                                        sub 399
+                                        | 000đ
+                                    +link("Dùng thử").btn.btn-red
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac17") Tính năng
+                                    .accordion-section-content#ac17
+                                        .tr.clearfix
+                                            .td Quản lý chung
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản lý đơn hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Hổ trợ đơn hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản lý sản phẩm
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Import hàng loạt sản phẩm
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản lý thông tin khách hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thống kê khách hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo theo chi tiết
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Xuất các báo cáo kết hợp
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Ẩn các comment  - chat
+                                            .td 
+                                                span.ico.icon-check-green
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac18") Cấu hình
+                                    .accordion-section-content#ac18
+                                        .tr.clearfix
+                                            .td Cấu hình thông tin chung
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thêm nhiều địa chỉ cửa hàng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Quản trị viên mặc định
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thay đổi quyền quản trị
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Sử dụng khu vực &amp; phí vận chuyển của Công ty vận chuyển
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Thiết lập khu vực &amp; phí vận chuyển riêng
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Tạo các khuyến mại, quảng cáo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Cấu hình ẩn các comment - chat
+                                            .td 
+                                                span.ico.icon-check-green
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac19") Kênh bán hàng
+                                    .accordion-section-content#ac19
+                                        .tr.clearfix
+                                            .td Facebook
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Zalo
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Viber
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Shop.myface.vn
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td 5giay.vn
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Webtretho.com
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Enbac.com
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Solo.vn
+                                            .td 
+                                                span.ico.icon-check-green
+                                .list-check.accordion-section
+                                    .heading 
+                                        a.accordion-section-title(href="#ac20") Hỗ trợ
+                                    .accordion-section-content#ac20
+                                        .tr.clearfix
+                                            .td Trung tâm hỗ trợ
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Email hỗ trợ
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Chat - hỗ trợ trực tuyến
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Điện thoại trực tiếp
+                                            .td 
+                                                span.ico.icon-check-green
+                                        .tr.clearfix
+                                            .td Hỗ trợ khách hàng của Shop
+                                            .td 
+                                                span.ico.icon-check-green
+        .block-services
+            .container
+                .row.list-services
+                    .col-sm-6.col-md-4.item
+                        +linkImg("", "services1.png", "javascript:void();", "services").link-img
+                        p Như ăn một miếng Sushi, nhưng có thể lần đầu bạn chưa biết cách ăn đúng cách. Đăng ký gói tư vấn, MyFace sẽ tu vấn riêng &amp; hướng dẫ bạn cách bán hàng hiệu quả.
+                        +link("Xem gói tư vấn").link-red
+                    .col-sm-6.col-md-4.item
+                        +linkImg("", "services1.png", "javascript:void();", "services").link-img
+                        p Bạn cần hỗ trợ quảng cáo, kết hợp các công cụ Digital Marketing, viết bài giới thiệu sản phẩm trên các phương tiện truyền thông. Nhân viên hỗ trợ ưu tiên...
+                        +link("Xem gói quảng cáo").link-red
+                    .col-sm-6.col-md-4.item
+                        +linkImg("", "services1.png", "javascript:void();", "services").link-img
+                        p Bạn cần kết nối công ty vận chuyển riêng, ưu tiên vận chuyển. Bạn cần ký gửi hàng hóa, thuê kho bãi, hỗ trợ quản lý kho.Nhân viên hỗ trợ ưu tiên sẽ...
+                        +link("Xem gói thuê kho bãi").link-red
+        .block-box.block-1.block-bannertnblock
+            .container
+                .row
+                    .col-md-10.col-md-offset-1
+                        .content-height
+                            .content.text-center
+                                h3 Phí giao hàng cạnh tranh, các buổi tư vấn thường xuyên, miễn phí 100% dùng thử hệ thống đầy đủ tính năng...
+                                .text-center
+                                    +link("Tăng doanh số bán hàng cùng MyFace").btn.btn-red
+                                p.italic Cơ hội dùng thử có thể kết thúc không như mong muốn

@@ -1,0 +1,16 @@
+mixin product(img,title,text1,text2,price) 
+  .item(class!=attributes.class)
+    figure
+      +img(img.alt,img.src)
+    .content
+      h4!=title
+      p.text-1!=text1
+      p.text-2!=text2
+    .group
+      .price
+        p Giá bán
+        p.price-text!=price
+      +link("Mua hàng", "card", "Mua hàng", "#").buy-product
+    +link("", "plus", "", "#").plus
+    if block
+      block

@@ -1,0 +1,61 @@
+extends layouts/layout
+
+block vars
+    -title = 'hotro'
+    -bodyClass = 'hotro'
+block navs
+  -var active = 'Hổ trợ';
+block container
+    main#main
+        .banner.banner-about
+            .content
+                .container
+                    .row
+                        .col-md-6.col-md-offset-6
+                            h1 Không có đam mê, bạn không có năng lượng;không có năng lượng, bạn chẳng có gì.Chẳng có gì tuyệt vời trên thế giới được làm mà không có đam mê.
+                                span
+                            p Donald Trump
+        .block-ecomerce
+            p E commerce đơn giản &amp; hiệu quả hơn cho tất cả mọi người
+                span
+        .container
+            .row
+                .col-md-4
+                    .menuCustom
+                        #menu
+                            nav
+                                ul
+                                    li
+                                        a(href="about.html") Giới thiệu
+                                    li.active
+                                        a(href="myface-team.html") Đội ngũ phát triển
+                                    li
+                                        a(href="#") Hợp tác &amp; liên hệ                        
+                .col-md-8
+                    .block-team-development
+                        .row-box
+                            .box
+                                a(href="javascript:void()", title="")
+                                    figure
+                                        +img("","images/upload/team.jpg")
+                                    h5 Bryan Tuyển
+                                    p Heard of manager
+                        .row-box
+                            .box
+                                a(href="javascript:void()", title="")
+                                    figure
+                                        +img("","images/upload/team.jpg")
+                                    h5 Bryan Tuyển
+                                    p Heard of manager
+                            .box
+                                a(href="javascript:void()", title="")
+                                    figure
+                                        +img("","images/upload/team.jpg")
+                                    h5 Bryan Tuyển
+                                    p Heard of manager
+                            .box
+                                a(href="javascript:void()", title="")
+                                    figure
+                                        +img("","images/upload/team.jpg")
+                                    h5 Bryan Tuyển
+                                    p Heard of manager

@@ -1,0 +1,162 @@
+extends layouts/layout
+
+block vars
+  -title = 'Homepage'
+  -bodyClass = 'home'
+
+block container
+    main#main
+        nav#navigation-menu
+            ul
+                li
+                    a(href="#block9") Section 9
+                    a(href="#block1") Section 1
+                    a(href="#block2") Section 2
+                    a(href="#block3") Section 3
+                    a(href="#block4") Section 4
+                    a(href="#block5") Section 5
+                    a(href="#block6") Section 6
+                    a(href="#block7") Section 7
+                    a(href="#block8") Section 8
+        .banner#block9
+            .content
+                .container
+                    .row
+                        .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+                            h1 Bán hàng trên Facebook &amp; các mạng xã hội chưa bao giờ dễ dàng hơn thế
+                            .total-link
+                                +link("Dễ quản lý, dễ sử dụng", "check", "Dễ quản lý, dễ sử dụng" , "#").link
+                                +link("Kết nối Facebook &amp; đa nền tảng", "check", "Kết nối Facebook &amp; đa nền tảng" , "#").link
+                                +link("Kết nối giao nhận, thanh toán sẵn sàng", "check", "Kết nối giao nhận, thanh toán sẵn sàng" , "#").link
+                            +link("Dừng thử miễn phí 100%").btn.btn-red
+                            p Cam kết bảo mật 100% thông tin và khách hàng của bạn
+            .pobanner.pobanner1 
+                a(href="javascript:void();")
+                    img(src="images/pobanner1.png")
+            .pobanner.pobanner2 
+                a(href="javascript:void();")
+                    img(src="images/pobanner2.png")
+            .pobanner.pobanner3
+                a(href="javascript:void();")
+                    img(src="images/pobanner3.png")
+            .pobanner.pobanner4 
+                a(href="javascript:void();")
+                    img(src="images/pobanner4.png")
+            .pobanner.pobanner5
+                a(href="javascript:void();")
+                    img(src="images/pobanner5.png")
+            .pobanner.pobanner6
+                a(href="javascript:void();")
+                    img(src="images/pobanner6.png")
+            .pobanner.pobanner7
+                a(href="javascript:void();")
+                    img(src="images/pobanner7.png")
+        .block-box#block1
+            .container
+                .row
+                    .col-sm-5.col-md-4.mg-bottom
+                        .content-height
+                            .content
+                                h3 Bán hàng trên Facebook <br/> sẽ hiệu quả hơn trước đây
+                                p Myface là một giải pháp giúp bán hàng &amp; quản lý bán hàng hiệu quả hơn trên Facebook &amp; các mạng xã hội khác.
+                    .col-sm-7.col-md-7.col-md-offset-1
+                        .content-height
+                            .content.text-center
+                                +img("face book","images/upload/img1.jpg").img-responsive
+        .block-box.bg-grey#block2
+            .container
+                .row
+                    .col-sm-7.mg-bottom
+                        .content-height
+                            .content.text-center
+                                +img("face book","images/upload/img2.png").img-responsive.img-social
+                    .col-sm-5
+                        .content-height
+                            .content
+                                h3 Tự động kết nối facebook &amp; <br/> các nền tảng mạng xã hội khác
+                                p Chỉ một lần đưa sản phẩm của bạn lên MyFace, sản phẩm đó sẽ tự động đồng bộ lên Facebook, Zalo và các sàn thượng mại điện tử ( Sendo.vn, 123mua.vn...) các diễn đàn khác ( 5s.vn webtrertho...)
+        .block-box#block3
+            .container
+                .row
+                    .col-sm-5.col-md-4.mg-bottom
+                        .content-height
+                            .content
+                                h3 Sử dụng MyFace rất <br/> trực quan &amp; đơn giản
+                                p Đăng thông tin sản phẩm, quản lý tình trạng đơn hàng, vận chuyển, xuất báo cáo... dễ dàng hơn, trực quan &amp; nhanh chóng.
+                    .col-sm-7.col-md-7.col-md-offset-1
+                        .content-height
+                            .content.text-center
+                                +img("face book","images/upload/img3.png").img-responsive
+        .block-box.bg-grey#block4
+            .container
+                .row
+                    .col-sm-7.mg-bottom
+                        .content-height
+                            .content.text-center
+                                +img("face book","images/upload/img4.png").img-responsive
+                    .col-sm-5
+                        .content-height
+                            .content
+                                h3 Đầy đủ tính năng để bạn sử dụng <br/> &amp; đơn giản hóa công việc của bạn
+                                ul
+                                    li Quản lý chung với  inbox, comments, thông tin đơn hàng mới nhất
+                                    li Quản lý chi tiết trạng thái đơn hàng, sản phẩm, chi tiết từng đơn hàng,từng sản phẩm. Chỉnh sửa dễ dàng.
+                                    li Quản lý thông tin khách hàng, xuất chi tiết các báo cáo.
+                                    li Tự động ẩn comment, ẩn số điện thoại để bạn không bị cướp khách hàng; chỉ bạn &amp; Khách hàng thấy được thông tin bị ẩn.
+                                    li Tự cấu hình vận chuyển, kết nối kênh bán hàng, tự cấu hình các chương trình khuyến mãi, bán hàng...
+                                p ...Cùng nhiều tính năng khác. 
+                                 +link( "Khám phá thêm?")
+        .block-box#block5
+            .container
+                .row
+                    .col-sm-5.mg-bottom
+                        .content-height
+                            .content
+                                h3 Kết nối với hệ thống quản lý <br/> giao hàng - vận chuyển
+                                p Chỉ cần sử dụng MyFace là tự động sử dụng được dịch vụ vận chuyển
+                                p.mg-top Bạn không cần mất thời gian tìm kiếm nhà vận chuyển, thương lượng dịch vụ vận chuyển, mọi chuyện vẫn thông suốt, dễ dàng.
+                    .col-sm-7
+                        .content-height
+                            .content.text-right
+                                +img("face book","images/upload/img5.png").img-responsive
+        .block-box.bg-grey#block6
+            .container
+                .row
+                    .col-sm-7.mg-bottom
+                        .content-height
+                            .content.text-center.content-tv.mg-bottom
+                                +img("face book","images/upload/img6.png").img-responsive
+                    .col-sm-5
+                        .content-height
+                            .content
+                                p.title Hơn thế nữa...
+                                h3 Sản phẩm của bạn được bán trên <br/> sàn thương mại điện tử C2C
+                                +link( "Shop.myface.vn").link-shop
+                                p Kênh bán hàng dành riêng cho các Shopper của MyFace.
+                                p.mg-top Với rất nhiều tính năng, ưu điểm &amp; sự trải nghiệm khác biệt dành cho người mua sắm, gia tăng kênh bán hàng cho các Shopper.
+        .block-box#block7
+            .container
+                .row
+                    .col-sm-5.mg-bottom
+                        .content-height
+                            .content
+                                p.title Vẫn còn nữa...
+                                h3 Bảo mật thông tin
+                                p Chúng tôi cam kết bảo mật thông tin của bạn &amp; tất cả thông tin khách hàng, đơn hàng của bạn.
+                                p.mg-top Những tin này sẻ được chúng tôi bảo mật ở mức độ cao nhất &amp; sẻ không được phép sử dụng ở bất kỳ một bên thứ ba nào khác hoặc đối thủ của bạn.
+                    .col-sm-7
+                        .content-height
+                            .content.text-center
+                                +img("face book","images/upload/img7.png").img-responsive
+        .block-box.bg-grey.block-1#block8
+            .container
+                .row
+                    .col-md-10.col-md-offset-1
+                        .content-height
+                            .content.text-center
+                                p.title Bán hàng không gì tuyệt vời hơn
+                                h3 Hảy trải nghiệm MyFace để tăng kênh bán hàng &amp; hiệu quả bán hàng của bạn ngay bây giờ
+                                .text-center
+                                    +link("Dùng thử miễn phí 100%").btn.btn-red
+                                p.semibold Đầy đủ 100% tính năng
+                                p.italic * Cơ hội dùng thử có thể kết thúc không như mong muốn

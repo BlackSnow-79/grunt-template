@@ -1,0 +1,48 @@
+// Page
+.tinhnang {
+	.carousel-slide {
+		overflow: hidden;
+	}
+	.banner {
+		background-image: url(../images/bannertn.jpg);
+		&.banner-text-left {
+			h1 , p {
+				color: white;
+			}
+		}
+	}
+}
+
+.goidichvu {
+	.banner {
+		&.banner-text-left {
+			p {
+				color: @color-text1;
+			}
+		}
+	}
+
+	.carousel {
+		.carousel-inner > .item > img {
+			width: auto;
+			max-width: inherit;
+		}
+		.carousel-control {
+			display: none;
+		}
+	}
+
+	.carousel-indicators {
+			li {
+				background-color: white;
+				width: 12px;
+				height: 12px;
+				&.active {
+					background-color: @color-nav;
+					border: 1px solid @color-nav;
+					margin: 1px;
+				}
+			}
+		}
+	
+}

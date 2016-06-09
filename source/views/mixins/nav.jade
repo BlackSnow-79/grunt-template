@@ -1,0 +1,18 @@
+block navs
+  -var active = ""
+mixin nav(items)
+  ul
+    each item,key in items
+      - if(typeof(item.href) === 'undefined') item.href="#"
+      - if(active === item.title)
+        li.active
+          +link(item.title, item.icon, item.text, item.href)
+          - if(typeof(item.items) !== 'undefined'){
+            +nav(item.items)
+          - }
+      - else
+        li
+          +link(item.title, item.icon, item.text, item.href)
+          - if(typeof(item.items) !== 'undefined'){
+            +nav(item.items)
+          - }

@@ -1,0 +1,30 @@
+mixin link(title, icon, text, href)
+  - if (typeof(href) === 'undefined') href = '#'
+  - if (typeof(text) === 'undefined') text=title;
+  - if (!icon){
+      a(href="#{href}", title="#{title}")&attributes(attributes)!=text
+  - }else{
+      a(href="#{href}", title="#{title}")&attributes(attributes)
+        span(class="ico icon-#{icon}")
+        - if(text){
+        span!=text
+        - }
+  - }
+
+mixin linkImg(title, src, href, alt)
+  - if (typeof(href) === 'undefined') href = '#'
+  - if (typeof(alt) === 'undefined') alt = title
+  a(href="#{href}", title="#{title}")&attributes(attributes)
+    img(src="images/upload/"+"#{src}", alt="#{alt}")
+mixin linkfa(title, icon, text, href)
+  - if (typeof(href) === 'undefined') href = '#'
+  - if (typeof(text) === 'undefined') text=title;
+  - if (!icon){
+      a(href="#{href}", title="#{title}")&attributes(attributes)!=text
+  - }else{
+      a(href="#{href}", title="#{title}")&attributes(attributes)
+        span(class="fa fa-#{icon}")
+        - if(text){
+        span!=text
+        - }
+  - }

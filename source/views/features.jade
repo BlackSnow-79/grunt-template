@@ -1,0 +1,252 @@
+extends layouts/layout
+
+block vars
+    -title = 'Tính năng'
+    -bodyClass = 'tinhnang'
+block navs
+  -var active = 'Tính năng';
+block container
+    main#main
+        .banner.banner-text-left
+            .content
+                .container
+                    .row
+                        .col-sm-8.col-md-5
+                            h1 Bán hàng trên mạng xã hội, gia tăng doanh số bán hàng
+                            p Tạo cửa hàng trực tuyến, đăng sản phảm, tạo quảng cáo, <br />bán hàng &amp; thu tiền
+                            +link("Bắt đầu câu chuyện bán hàng của bạn").btn.btn-red
+            
+        .block-box.block-fc
+            .container
+                h3 MyFace giúp bạn tiết kiệm công sức với những <br /> tính năng linh hoạt
+                p Nhiều tính năng để bạn tối ưu thời gian quản lý, đoan giản hóa công việc liên quan hệ thống,  từ đó giúp <br /> bạn có nhiều thời gian bán hàng, tăng doanh thu.
+                p Những tính năng này luôn được cập nhật &amp; hoàn thiện, MyFace không dừng lại với những gì hiện có.
+                .list-fc.col-md-10.col-md-offset-1
+                    .row
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn1
+                                span Thiết kế thân thiện dễ sử dụng
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn2
+                                span Quản lý, theo dõi đơn hàng
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn3
+                                span Quản lý, tạo mới sản phẩm
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn4
+                                span Quản lý thông tin khách hàng
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn5
+                                span Xuất bảo cáo đơn hàng, khách hàng,vận chuyển
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn6
+                                span Chat, tương tác với khách hàng
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn7
+                                span Kết nối, thiết lập vận chuyển
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn8
+                                span Kết nối các kênh bán hàng
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn9
+                                span Tạo các chương trình khuyến mãi
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn10
+                                span Ẩn comment, số điện thoại
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn11
+                                span Bán hàng trên sàn thương mại điện tử C2C Shop.myface.vn
+                        .col-sm-6.col-md-4
+                            a(href="javascript:void();",title="").link-icon-block
+                                label
+                                    span.ico.icon-tn12
+                                span Hổ trợ, giải đáp tận tình
+        .block-box.bg-grey
+            .container
+                .row
+                    .col-sm-7.mg-bottom
+                        .content-height
+                            .content.text-center
+                                +img("face book","images/upload/imgtn1.png").img-responsive.img-po-left.img-po1
+                    .col-sm-5
+                        .content-height
+                            .content
+                                p.title Thiết kế
+                                h3 MyFace sử dụng ngôn ngữ thiết kế  <br/> tối giản, tập trung người dùng
+                                p MyFace cố gáng đơn giản hóa các tính năng, giúp bạn dễ làm quen tiếp cận &amp; sử dụng ngay trong những lần đầu tiên
+        .block-box.carousel-slide
+            .container
+                .row
+                    .col-sm-10.col-sm-offset-1
+                        p.title Tính năng
+                        h3 Quản lý đơn hàng
+                        p Bạn sẻ không bỏ sót đơn hàng nào, điều chỉnh &amp; hổ trợ cho Khách hàng của mình cách nhanh nhất
+                        .total-link
+                            +link("Dễ quản lý, dễ sử dụng", "check", "Dễ quản lý, dễ sử dụng" , "#").link
+                            +link("Kết nối Facebook &amp; đa nền tảng", "check", "Kết nối Facebook &amp; đa nền tảng" , "#").link
+                            +link("Kết nối giao nhận, thanh toán sẵn sàng", "check", "Kết nối giao nhận, thanh toán sẵn sàng" , "#").link
+                        .carousel.slide.clearfix#carousel-example-generic(data-ride="carousel")
+                            ol.carousel-indicators
+                                li(data-target="#carousel-example-generic",data-slide-to="0").active
+                                li(data-target="#carousel-example-generic",data-slide-to="1")
+                                li(data-target="#carousel-example-generic",data-slide-to="2")
+                            .carousel-inner(role="listbox")
+                                .item.active
+                                    +img("slide", "images/slide.png")
+                                .item
+                                    +img("slide", "images/slide.png")
+                                .item
+                                    +img("slide", "images/slide.png")
+                            a.left.carousel-control(href="#carousel-example-generic" ,role="button",data-slide="prev")
+                                span.fa.fa-angle-left(aria-hidden="true")
+                                span.sr-only Previous
+                          
+                            a.right.carousel-control(href="#carousel-example-generic", role="button", data-slide="next")
+                                span.fa.fa-angle-right(aria-hidden="true")
+                                span.sr-only Next
+        .block-box.bg-grey
+            .container
+                .row
+                    .col-sm-7.mg-bottom
+                        .content-height
+                            .content.text-center
+                                +img("face book","images/upload/imgtn2.png").img-responsive.img-po-left.img-po2
+                    .col-sm-5
+                        .content-height
+                            .content
+                                p.title Tính năng
+                                h3 Quản lý sản phẩm
+                                p Bắt đầu kế hoạch bán hàng bằng việc phân loại, tạo mới và chỉnh sửa thông tin hàng ngàn sản phẩm thật dễ dàng.
+        .block-box
+            .container
+                .row
+                    .col-sm-5.col-md-4.mg-bottom
+                        .content-height
+                            .content
+                                p.title Tính năng asdasff
+                                h3 Quản lý thông tin khách hàng
+                                p Khách hàng sẽ luôn hài lòng khi bạn nhớ thông tin của họ. Đừng quên những thông tin khách hàng để bạn chăm sóc khách hàng tốt hơn, đưa ra các chính sách bán hàng cạnh tranh. Đồng thời giới thiệu, quảng bá các sản phẩm về sau
+                    .col-sm-7.col-md-7.col-md-offset-1
+                        .content-height.content-height-bottom 
+                            .content.text-center
+                                +img("face book","images/upload/imgtn3.png").img-responsive.img-po-right.img-po3
+        .block-box.bg-grey
+            .container
+                .row
+                    .col-sm-7.mg-bottom
+                        .content-height.content-height-bottom
+                            .content.text-center
+                                +img("face book","images/upload/imgtn4.png").img-responsive.img-po-left.img-po4
+                    .col-sm-5
+                        .content-height
+                            .content
+                                p.title Tính năng
+                                h3 Xuất các báo cáo
+                                p Mình đã bán được bao nhiêu đơn hàng trong tuần? Đơn hàng nào đanng được giao? Bao nhiêu sản phẩm còn trong kho để dự trù nhập thêm hàng, hay cần bán đi nhanh?... MyFace hổ trợ xuất các báo cáo với vài thao tác đơn giản.
+        .block-box
+            .container
+                .row
+                    .col-sm-5.col-md-4.mg-bottom
+                        .content-height
+                            .content
+                                p.title Tính năng
+                                h3 Chat, tương tác với khách hàng
+                                p Có rất nhiều comment - inbox, rất nhiều kênh bán hàng không kiểm soát, có thể sót đơn hàng... Quản lý tập trung tại một chổ giúp bạn theo dõi &amp; trả lời khách hàng rất dễ dàng.
+                    .col-sm-7.col-md-7.col-md-offset-1
+                        .content-height
+                            .content.text-center
+                                +img("face book","images/upload/imgtn5.png").img-responsive.img-po-right.img-po5
+        .block-box.bg-grey
+            .container
+                .row
+                    .col-sm-7.mg-bottom
+                        .content-height
+                            .content.text-center
+                                +img("face book","images/upload/imgtn6.png").img-responsive
+                    .col-sm-5
+                        .content-height
+                            .content
+                                p.title Giao nhận sản phẩm
+                                h3 Thiết lập vận chuyển
+                                p Tự động kết nối đơn vị vận chuyển, sử dụng cước phí mặc định, hoặc thiết lập riêng cước phí từng khu vực, từng đối tượng khách hàng khác nhau để gia tăng lợi thế bán hàng.
+                                p.mg-top Công ty vận chuyển sẻ tự động đến lấy &amp; giao hàng cho khách hàng của bạn
+        .block-box
+            .container
+                .row
+                   .col-sm-5.col-md-4.mg-bottom
+                        .content-height
+                            .content
+                                p.title Quảng bá sản phẩm
+                                h3 Tạo các chương trình khuyến mại
+                                p Sản phẩm của bạn chưa được biết đến rộng rãi, doanh số bán hàng thấp, sản phẩm chưa đủ hấp dẫn người mua hoặc bạn cần quảng bá thương hiệu mạnh mẽ hơn... tạo các chương trình khuyễn mãi giúp bạn thuyết phục &amp; chuyên nghiệp hơn trong mắt khách hàng.
+                    .col-sm-7.col-md-7.col-md-offset-1
+                        .content-height.content-height-bottom
+                            .content.text-center
+                                +img("face book","images/upload/imgtn7.png").img-responsive.img-po-right.img-po7 
+        .block-box.bg-red.block-red
+            .container
+                .row
+                    .col-sm-7.mg-bottom
+                        .content-height
+                            .content.text-center
+                                +img("face book","images/upload/imgtn8.png").img-responsive.img-po-left.img-po8
+                    .col-sm-5
+                        .content-height
+                            .content
+                                p.title Độ phủ sản phẩm
+                                h3 Bán hàng tự động trên sàn thương mại điện tử C2C
+                                +link( "Shop.myface.vn").link-shop
+                                p Bạn sẻ được gia tăng thêm độ phủ sản phẩm từ sàn giao dịch thương mại điện tử C2C : Shop.myface.vn. một sàn thương mại điện tử mới mẻ, đầy sôi động, có nhiều tính năng &amp; trải nghiệm khách biệt dành cho người mua sắm.
+                                p.mg-top Giúp bạn thêm cơ hội tiếp cận khách hàng, gia tăng cơ hội bán hàng.
+        .block-box
+            .container
+                .row
+                   .col-sm-5.col-md-4.mg-bottom
+                        .content-height
+                            .content
+                                p.title Hổ trợ shopper
+                                h3 Hổ trợ, giải đáp tận tình
+                                ul
+                                    li Trung tâm hổ trợ
+                                    li Gửi email bất cứ lúc nào
+                                    li Chat, hổ trợ trực tuyến
+                                    li Gọi điện thoại trực tiếp
+                                p MyFace lkhông chỉ hỗ trợ bạn, MyFace còn hỗ trợ khách hàng của bạn gặp khó khăn trong việc đặt hàng, xem sản phẩm...
+                    .col-sm-7.col-md-7.col-md-offset-1
+                        .content-height.content-height-bottom
+                            .content.text-center
+                                +img("face book","images/upload/imgtn9.png").img-responsive.img-po-right.img-po9 
+        .block-box.block-1.block-bannertnblock
+            .container
+                .row
+                    .col-md-10.col-md-offset-1
+                        .content-height
+                            .content.text-center
+                                p.title Bán hàng không gì tuyệt vời hơn
+                                h3 Hảy trải nghiệm MyFace để tăng kênh bán hàng &amp; hiệu quả bán hàng của bạn ngay bây giờ
+                                .text-center
+                                    +link("Dùng thử miễn phí 100%").btn.btn-red
+                                p.semibold Đầy đủ 100% tính năng
+                                p.italic * Cơ hội dùng thử có thể kết thúc không như mong muốn
